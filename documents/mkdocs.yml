@@ -1,7 +1,8 @@
-site_name: My Docs
+site_name: 4E電気情報工学実験
 nav:
   - ホーム Home: index.md
   - 定K形フィルタ Constant-K filters: constantk.md
+  - 通信工学 Communication Engineering: communicationeng.md
 
 theme: readthedocs
 
@@ -12,6 +13,8 @@ markdown_extensions:
   - def_list
   - pymdownx.keys
   - codehilite
+  - mdx_math:
+      enable_dollar_delimiter: true
 
 
 extra_javascript:
