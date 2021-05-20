@@ -1,19 +1,25 @@
 site_name: My Docs
 nav:
-  - Home: index.md
-  - tesuto: test.md
+  - ホーム Home: index.md
+  - 定K形フィルタ Constant-K filters: constantk.md
 
 theme: readthedocs
 
 markdown_extensions:
-  - mdx_math:
-      enable_dollar_delimiter: true
+  - admonition
+  - footnotes
+  - fontawesome_markdown
+  - def_list
+  - pymdownx.keys
+  - codehilite
+
 
 extra_javascript:
-  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML
 
 extra_css:
   - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
   - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
   - "css/custom.css"
+  - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
 
