@@ -81,6 +81,10 @@
     </ul>
                     </li>
                 </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../communicationeng/">通信工学 Communication Engineering</a>
+                    </li>
+                </ul>
       </div>
     </div>
     </nav>
@@ -162,10 +166,14 @@ Also, find the cutoff frequency from the graph.</p>
 <h3 id="numerical-analysis-by-programming">プログラミングによる数値解析 Numerical analysis by programming</h3>
 <p>上で解析したローパスフィルタの出力は、以下の式で求められる。</p>
 <p>The output voltage of the low-pass filter analyzed above can be obtained by the following equation.</p>
-<p>$$ V_{out} = V_o \frac{1}{2-\omega^2 CL+j\omega\left(\frac{L}{R}+CR\right)} $$</p>
+<p>
+<script type="math/tex; mode=display"> V_{out} = V_o \frac{1}{2-\omega^2 CL+j\omega\left(\frac{L}{R}+CR\right)} </script>
+</p>
 <p>同様に、ハイパスフィルタの出力は以下の式で求められる。</p>
 <p>Similarly, the output of the high-pass filter is as follows.</p>
-<p>$$ V_{out} = V_o \frac{\omega^2 CL}{(2\omega^2 CL-1)-j\omega\left(\frac{L}{R}+CR\right)} $$</p>
+<p>
+<script type="math/tex; mode=display"> V_{out} = V_o \frac{\omega^2 CL}{(2\omega^2 CL-1)-j\omega\left(\frac{L}{R}+CR\right)} </script>
+</p>
 <p>ローパスフィルタとハイパスフィルタについて、上の式をもとに数値解析を行え。</p>
 <p>また、それぞれのカットオフ周波数を数値計算の手法であるニュートン法で求めよ。</p>
 <p>使用するプログラミング言語は問わない。</p>
@@ -190,6 +198,8 @@ Also, find the cutoff frequency from the graph.</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../communicationeng/" class="btn btn-neutral float-right" title="通信工学 Communication Engineering">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="ホーム Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -220,6 +230,8 @@ Also, find the cutoff frequency from the graph.</p>
       
         <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../communicationeng/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>通信工学 Communication Engineering - 4E電気情報工学実験</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="//fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet" />
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" />
+  <link href="../css/custom.css" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u901a\u4fe1\u5de5\u5b66 Communication Engineering";
+    var mkdocs_page_input_path = "communicationeng.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> 4E電気情報工学実験</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">ホーム Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../constantk/">定K形フィルタ Constant-K filters</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">通信工学 Communication Engineering</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#objective">目的 Objective</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-basics">理論 The basics</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#experiment-method">実験方法 Experiment method</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fourier-transformation-of-waveform">時間波形とフーリエ変換 Fourier transformation of waveform</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#amplitude-modulation">振幅変調 Amplitude modulation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#frequency-modulation">周波数変調 Frequency modulation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#discussion">検討課題 Discussion</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">4E電気情報工学実験</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>通信工学 Communication Engineering</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">通信工学（変調）</h1>
+<p>Communication Engineering (Modulation)</p>
+<h2 id="objective">目的 Objective</h2>
+<p>AM・FM変調方式について数値解析を行い、周波数特性を理解する。</p>
+<p>Analyze amplitude and frequency modulation system and understand their frequency characteristics.</p>
+<h2 id="the-basics">理論 The basics</h2>
+<p>次の言葉を含むよう、各自調べてまとめること。箇条書きでなく、文章で記述すること。</p>
+<p>Research and summarize a theory to include the following words.</p>
+<ul>
+<li>フーリエ変換 Fourier transform</li>
+<li>振幅変調 Amplitude modulation</li>
+<li>周波数変調 Frequency modulation</li>
+<li>過変調 Overmodulation</li>
+</ul>
+<h2 id="experiment-method">実験方法 Experiment method</h2>
+<p>以下の実験を任意のプログラミング言語で行うこと。</p>
+<p>Do the following experiments in a programming language of your choice.</p>
+<p>参考としてPythonプログラムを提供する。</p>
+<p>A Python program is provided for reference.</p>
+<p>https://colab.research.google.com/drive/1uG3Kugf22wQlX6LQIOrHb1SWComctlj9?usp=sharing</p>
+<h3 id="fourier-transformation-of-waveform">時間波形とフーリエ変換 Fourier transformation of waveform</h3>
+<p>cos波 <script type="math/tex"> f(t)=\cos{(2\pi t/T)} (0<t\leqq T) </script> を離散化し、フーリエ変換する。</p>
+<p>We discretize the cosine wave <script type="math/tex"> f(t)=\cos{(2\pi t/T)} (0<t\leqq T) </script> and Fourier transform it.</p>
+<p>時間刻みを <script type="math/tex"> \delta t </script> とし、<script type="math/tex"> N=T/\delta t </script> とすることで、</p>
+<p>
+<script type="math/tex"> t=i\Delta t (1\leqq i \leqq N) </script> と時間を離散化できる。</p>
+<p>By setting the time increments as <script type="math/tex"> \delta t </script> and <script type="math/tex"> N=T/\delta t </script> ,</p>
+<p>we can discretize the time as <script type="math/tex"> t=i\delta t (1\leqq i \leqq N) </script>
+</p>
+<p>これによってcos波を離散化すると、<script type="math/tex"> f(i\Delta t)=\cos{(2\pi i/N)} </script> となる。</p>
+<p>Discretizing the cosine wave, we get <script type="math/tex"> f(i\Delta t)=\cos{(2\pi i/N)} </script> .</p>
+<p>離散化したcos波について、離散フーリエ変換を行い結果を図示せよ。</p>
+<p>For a discretized cosine wave, perform a discrete Fourier transform and show the result.</p>
+<h3 id="amplitude-modulation">振幅変調 Amplitude modulation</h3>
+<p>上のcos波をAM変調すると、以下の式となる。</p>
+<p>Amplitude modulation of the cosine wave above is the following equation.</p>
+<p>
+<script type="math/tex; mode=display"> V_{AM}(i\Delta t)=\left(1+m_a \cos{(2\pi ip/N)}\right)\cos{(2\pi i/N)} </script>
+</p>
+<p>振幅変調した波形について、フーリエ変換を行い結果を図示せよ。</p>
+<p>Perform a Fourier transform on the amplitude-modulated waveform and show the results.</p>
+<p>ただし、変調度 <script type="math/tex"> m_a=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) </script>とする。</p>
+<p>The values for each parameters are as follows:</p>
+<p>Modulation index <script type="math/tex"> m_a=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) </script>
+</p>
+<h3 id="frequency-modulation">周波数変調 Frequency modulation</h3>
+<p>上のcos波を周波数変調すると、以下の式となる。</p>
+<p>Frequency modulation of the cosine wave above is the following equation.</p>
+<p>
+<script type="math/tex; mode=display"> V_{FM}(i\Delta t)=\cos{(2\pi i/N+\beta \sin{(2\pi ip/N)})} </script>
+</p>
+<p>周波数変調した波形について、フーリエ変換を行い結果を図示せよ。</p>
+<p>Perform a Fourier transform on the frequency-modulated waveform and show the results.</p>
+<p>ただし、変調指数 <script type="math/tex"> \beta=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) </script> とする。</p>
+<p>The values for each parameters are as follows:</p>
+<p>Modulation index <script type="math/tex"> \beta=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) </script>
+</p>
+<h2 id="discussion">検討課題 Discussion</h2>
+<p>(1) アナログ変調とディジタル変調の違いを説明せよ。</p>
+<p>Explain the difference between analog modulation and digital modulation.</p>
+<p>(2) 5G（第5世代移動通信システム）で使われている変調方式を説明せよ。</p>
+<p>Explain the modulation system used in 5G (5th generation mobile communication system).</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../constantk/" class="btn btn-neutral" title="定K形フィルタ Constant-K filters"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../constantk/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
