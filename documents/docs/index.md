@@ -22,9 +22,9 @@ Pythonプログラムは、[github.com/ohashi-gnct/exp4e](https://github.com/oha
 
 [Google ColabのTips](./colabtips.md)
 
-[定K形フィルタ Constant-K filters](./constantl.md)
+[定K形フィルタ Constant-K filters](./constantk.md)
 
-[通信工学 Communication Engineering](./communication.md)
+[通信工学 Communication Engineering](./communicationeng.md)
 
 [マルチメディア信号処理 Signal prosessing for multimedia](./multimedia.md)
 
