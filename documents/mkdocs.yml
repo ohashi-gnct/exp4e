@@ -1,6 +1,7 @@
 site_name: 4E電気情報工学実験
 nav:
   - ホーム Home: index.md
+  - Google ColabのTips: colabtips.md
   - 定K形フィルタ Constant-K filters: constantk.md
   - 通信工学 Communication Engineering: communicationeng.md
   - マルチメディア信号処理 Signal prosessing for multimedia: multimedia.md
