@@ -116,7 +116,7 @@ A Python program is provided for reference.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ohashi-gnct/exp4e/blob/master/constantk/Constant_K_filter_level3.ipynb)
 
-レベル3 level 2:
+レベル2 level 2:
 
 [github.com/ohashi-gnct/exp4e/blob/master/constantk/Constant_K_filter_level2.ipynb](https://github.com/ohashi-gnct/exp4e/blob/master/constantk/Constant_K_filter_level2.ipynb)
 

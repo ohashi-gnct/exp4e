@@ -69,6 +69,42 @@
                 </ul>
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">データ解析入門 How to analyze big data</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">高校数学の復習</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1">数1：データの分析</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#b">数B: 確率分布と統計的な推測</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">データ解析の流れ</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">目的と仮説を立てる</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">データを集める</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_6">データを可視化する</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_7">さらなる知見を得る</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_8">高度なデータ解析の方法</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_9">回帰</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_10">分類</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_11">相関</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_12">要約</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_13">有意性の検討</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
       </div>
@@ -103,7 +139,54 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="_1">データ解析入門</h1>
+<p>このページでは、ビッグデータ解析の基礎となる知識を解説しています。</p>
+<h2 id="_2">高校数学の復習</h2>
+<p>まずはデータ解析入門以前の基礎的な数学を復習しましょう。</p>
+<p>以下のキーワードを全て説明できますか？</p>
+<h3 id="1">数1：データの分析</h3>
+<ul>
+<li>データの平均値・中央値・最頻値</li>
+<li>四分位数、箱ひげ図</li>
+<li>分散と標準偏差</li>
+<li>共分散</li>
+<li>相関係数</li>
+</ul>
+<p><a href="https://manabitimes.jp/math/1024#:~:text=%E2%86%92%E3%83%98%E3%83%AD%E3%83%B3%E3%81%AE%E5%85%AC%E5%BC%8F%E3%81%AE%E8%A8%BC%E6%98%8E%E3%81%A8%E4%BD%BF%E7%94%A8%E4%BE%8B-,%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E5%88%86%E6%9E%90,%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E6%95%B4%E7%90%86%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E7%94%A8%E8%AA%9E,-%E4%BB%A3%E8%A1%A8%E5%80%A4">manabitimes.jp/math/1024</a></p>
+<h3 id="b">数B: 確率分布と統計的な推測</h3>
+<ul>
+<li>確率変数</li>
+<li>連続分布、確率密度関数</li>
+<li>二項分布、正規分布</li>
+<li>母集団と標本調査</li>
+<li>中心極限定理</li>
+<li>母平均の推定、信頼区間</li>
+</ul>
+<p><a href="https://manabitimes.jp/math/1027#:~:text=%E2%86%92%E4%B8%89%E6%AC%A1%E5%85%83%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%9B%B4%E7%B7%9A%E3%81%AE%E6%96%B9%E7%A8%8B%E5%BC%8F-,%E7%A2%BA%E7%8E%87%E5%88%86%E5%B8%83%E3%81%A8%E7%B5%B1%E8%A8%88%E7%9A%84%E3%81%AA%E6%8E%A8%E6%B8%AC,%E7%A2%BA%E7%8E%87%E5%A4%89%E6%95%B0,-%E7%A2%BA%E7%8E%87%E5%88%86%E5%B8%83">manabitimes.jp/math/1027</a></p>
+<h2 id="_3">データ解析の流れ</h2>
+<p>データ解析は、必ずビジョンを持って行わなければいけません。</p>
+<p>ただ何となくデータをこねくり回しても、望んだ結果は得られず、</p>
+<p>事実とは異なる結論を導く可能性すらあります。</p>
+<p>ビジョンを持って解析を行うための手順を説明します。</p>
+<h3 id="_4">目的と仮説を立てる</h3>
+<p>まずは、○○と××の定量的な関係性が知りたい！とか、</p>
+<p>△△の変化が□□の増加をもたらしているのではないか？のような、</p>
+<p>仮説を立ててみましょう。</p>
+<p>ニュースなどで情報収集して、「こんなデータとこんなデータには関連性があるんじゃないか？」</p>
+<p>と考えてみるのが非常に大切だと思います。</p>
+<p>ここで重要なのは、<strong>先にデータを見ながら考えない</strong>ことです。</p>
+<p>単一のデータでなくても、時刻や場所がデータに入っていれば複数のデータを組み合わせることもできます。</p>
+<p>データを確認してしまうと、どうしても「その中でできること」を考えてしまいがちです。</p>
+<p>思考の幅を狭めないようにしてください。</p>
+<h3 id="_5">データを集める</h3>
+<h3 id="_6">データを可視化する</h3>
+<h3 id="_7">さらなる知見を得る</h3>
+<h2 id="_8">高度なデータ解析の方法</h2>
+<h3 id="_9">回帰</h3>
+<h3 id="_10">分類</h3>
+<h3 id="_11">相関</h3>
+<h3 id="_12">要約</h3>
+<h2 id="_13">有意性の検討</h2>
               
             </div>
           </div>
