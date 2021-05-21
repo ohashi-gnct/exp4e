@@ -65,6 +65,34 @@
                 </ul>
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">マルチメディア信号処理 Signal prosessing for multimedia</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#objective">目的 Objective</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-basics">理論 The basics</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#experiment-method">実験方法 Experiment method</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#preparation">実験準備 Preparation</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_2">画像データの周波数解析</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_3">音声データの周波数解析</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#image-filtering-in-the-frequency-domain">画像の周波数領域フィルタ Image filtering in the frequency domain</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#frequency-characteristics-of-image-filtering-in-the-spatial-domain">画像の空間領域フィルタと周波数 Frequency characteristics of image filtering in the spatial domain</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#audio-filtering-in-the-frequency-domain">音声の周波数領域フィルタ Audio filtering in the frequency domain</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#frequency-characteristics-of-audio-filtering-in-the-time-domain">音声の時間領域フィルタと周波数 Frequency characteristics of audio filtering in the time domain</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sampling-and-interpolation-of-waveform">サンプリングと波形の復元 Sampling and interpolation of waveform</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
                     </li>
                 </ul>
                 <ul>
@@ -103,7 +131,102 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="_1">マルチメディア信号処理</h1>
+<p>Signal prosessing for multimedia</p>
+<p><img alt="" src="../images/multimedia.gif" /></p>
+<h2 id="objective">目的 Objective</h2>
+<p>ディジタル信号処理について、数学的操作と具体的な結果を関連付けて理解する。</p>
+<p>Understand digital signal processing by relating mathematical operations to specific results.</p>
+<h2 id="the-basics">理論 The basics</h2>
+<p>次の言葉を含むよう、各自調べてまとめること。箇条書きでなく、文章で記述すること。</p>
+<p>Research and summarize a theory to include the following words.</p>
+<ul>
+<li>フーリエ級数展開 Fourier series expansion</li>
+<li>離散フーリエ変換 Discrete Fourier transform</li>
+<li>画像の周波数 Frequency of images</li>
+<li>パワースペクトル Power spectrum</li>
+<li>スペクトログラム Spectrogram</li>
+<li>畳み込み Convolution</li>
+</ul>
+<h2 id="experiment-method">実験方法 Experiment method</h2>
+<p>以下の課題を実施せよ。</p>
+<p>Do following tasks.</p>
+<p>使用するプログラミング言語は問わない。</p>
+<p>Any programming language is acceptable.</p>
+<p>参考としてPythonプログラムを提供する。</p>
+<p>A Python program is provided for reference.</p>
+<p><a href="https://github.com/ohashi-gnct/exp4e/blob/master/multimedia/multimedia2022.ipynb">github.com/ohashi-gnct/exp4e/blob/master/multimedia/multimedia2022.ipynb</a></p>
+<p><a href="https://colab.research.google.com/github/ohashi-gnct/exp4e/blob/master/multimedia/multimedia2022.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<p>以下の課題のうち、（必須課題）は実験時間中に結果をLMSに提出せよ。</p>
+<p>For the following tasks, submit the results to the LMS during class for the required tasks.</p>
+<p>授業時間中に（必須課題）が終了した場合、レポートではなく（発展課題）に取り組むこと。</p>
+<p>If required tasks are completed during class, work on the advanced tasks.</p>
+<p>この実験では、いくつかの画像や音声を配布するが、あくまでも参考用である。</p>
+<p>In this experiment, we will provide some images and sounds, but they are for reference only.</p>
+<p>レポートでは自身で実験に適した画像や音声を用意すること。</p>
+<p>In your report, use your own images and sounds suitable for the experiment.</p>
+<p>他人が著作権を持つ画像や音声を使用する場合、</p>
+<p>利用規約または使用の許される法的根拠を必ず確認すること。</p>
+<p>If you use images or sounds that are copyrighted by others, </p>
+<p>check the terms of use or the legal basis for the permitted use.</p>
+<p>ただし、高専機構は授業目的公衆送信補償金を支払っている。</p>
+<p>Note that this school pays remuneration for public transmission for school lessons.</p>
+<h3 id="preparation">実験準備 Preparation</h3>
+<p>この項目は、事前に行ってくること。</p>
+<p>Those tasks should be done in advance.</p>
+<h4 id="_2">画像データの周波数解析</h4>
+<p>Frequency analysis of images</p>
+<p>画像に対して2次元高速フーリエ変換(FFT)を行い、周波数スペクトルを表示せよ。</p>
+<p>また、IFFTによってもとの画像に戻ることを確認せよ。</p>
+<h4 id="_3">音声データの周波数解析</h4>
+<p>Frequency analysis of audio</p>
+<p>何らかの音楽の波形とスペクトログラム（周波数スペクトルの時間変化）を同時に表示せよ。</p>
+<p>Show the waveform and spectrogram of some music.</p>
+<h3 id="image-filtering-in-the-frequency-domain">画像の周波数領域フィルタ Image filtering in the frequency domain</h3>
+<p>（必須課題 Required task）</p>
+<p>画像をFFTし、低周波の領域のみ残してIFFTすると画像にローパスフィルターをかけることができる。</p>
+<p>We can apply a low-pass filter to the image by performing an FFT to the image and an IFFT with only the low frequency range of spectrum.</p>
+<p>画像にローパスフィルターまたはハイパスフィルターをかけ、出力された画像と元画像を比較して考察せよ。</p>
+<p>Apply a low-pass filter or a high-pass filter to the image and compare the output image with the original image.</p>
+<p>授業中に提出：3枚の画像をフーリエ変換した図</p>
+<p>Assignment: Fourier transformed images of three images.</p>
+<h3 id="frequency-characteristics-of-image-filtering-in-the-spatial-domain">画像の空間領域フィルタと周波数 Frequency characteristics of image filtering in the spatial domain</h3>
+<p>（必須課題 Required task）</p>
+<p>画像に対して移動平均フィルタとガウシアンフィルタをかけよ。</p>
+<p>Apply a moving average filter and a Gaussian filter to the image.</p>
+<p>それぞれの画像に対してFFTを行い、</p>
+<p>これらのフィルタの役割について周波数の観点から考察せよ。</p>
+<p>Perform an FFT on each filtered image </p>
+<p>and consider the effect of these filters in the aspect of frequency.</p>
+<p>授業中に提出：ガウシアンフィルタをかけた画像とそのスペクトル</p>
+<p>Assignment: Gaussian-filtered image and its spectrum</p>
+<h3 id="audio-filtering-in-the-frequency-domain">音声の周波数領域フィルタ Audio filtering in the frequency domain</h3>
+<p>（必須課題 Required task）</p>
+<p>音声をFFTし、低周波の領域のみ残してIFFTすると音声にローパスフィルタをかけることができる。</p>
+<p>We can apply a low-pass filter to the audio by performing an FFT to the audio and an IFFT with only the low frequency range of spectrum.</p>
+<p>高周波ノイズの加えられた音声に対し、ローパスフィルターをかけて出力を得よ。</p>
+<p>Apply a low-pass filter to the audio with high-frequency noise and get the output.</p>
+<p>フィルターを通す前と後のスペクトログラムを比較し、考察せよ。</p>
+<p>Compare the spectrograms of audio before and after filtering.</p>
+<p>また、音楽に対してローパスフィルターやハイパスフィルターをかけ、聴覚上の変化について考察せよ。</p>
+<p>Also, apply a low-pass filter or a high-pass filter to the music and consider the hearing changes.</p>
+<p>授業中に提出：周波数フィルタをかけた音声の波形とスペクトログラム（音声ではなく画像）</p>
+<p>Assignment: Frequency-filtered audio waveform and spectrogram</p>
+<h3 id="frequency-characteristics-of-audio-filtering-in-the-time-domain">音声の時間領域フィルタと周波数 Frequency characteristics of audio filtering in the time domain</h3>
+<p>（発展課題 Advanced task）</p>
+<p>音声に対して、あるサンプルから[$ n]点後までの振幅を平均するような</p>
+<p>移動平均フィルタを設計し、適用せよ。</p>
+<p>また、<script type="math/tex"> A\exp{-t/\tau}</script>（<script type="math/tex"> t </script> はあるサンプルから数えたサンプル数、<script type="math/tex"> \tau</script>は定数）</p>
+<p>の形で減衰する指数平滑フィルタを設計し、適用せよ。</p>
+<p>ただし、指数平滑フィルタの長さは無限長になるが、ある程度で打ち切ること。</p>
+<p>それぞれFFTを行い、これらのフィルタの役割について周波数の観点から考察せよ。</p>
+<h3 id="sampling-and-interpolation-of-waveform">サンプリングと波形の復元 Sampling and interpolation of waveform</h3>
+<p>（発展課題 Advanced task）</p>
+<p>正弦波を荒く（1周期につき6-8点くらい）サンプリングせよ。</p>
+<p>これらの点をパルス列とみなし、sinc関数<script type="math/tex"> \mathrm{sinc}(x) = \sin{x}/x</script>を畳み込み、</p>
+<p>もとの正弦波が復元できることを確認せよ。</p>
+<p>また、さらに荒く（1周期につき1.5点くらい）サンプリングして同様にsinc関数を畳み込むと、</p>
+<p>正しく復元できないことを確認せよ。これがなぜかを考察せよ。</p>
               
             </div>
           </div>
