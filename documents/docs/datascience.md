@@ -67,6 +67,10 @@
 
 ## 高度なデータ解析の方法
 
+[github.com/ohashi-gnct/exp4e/blob/master/datascience/datascience.ipynb](https://github.com/ohashi-gnct/exp4e/blob/master/datascience/datascience.ipynb)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ohashi-gnct/exp4e/blob/master/datascience/datascience.ipynb)
+
 ### 回帰
 
 ### 分類
