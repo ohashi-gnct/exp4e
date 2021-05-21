@@ -110,8 +110,17 @@ Any programming language is acceptable.
 
 A Python program is provided for reference.
 
-[https://colab.research.google.com/drive/1zNCfxhPKgGnYvRVGvhQkUZki0-0sd16f?usp=sharing](https://colab.research.google.com/drive/1zNCfxhPKgGnYvRVGvhQkUZki0-0sd16f?usp=sharing)
+レベル3 level 3:
 
+[github.com/ohashi-gnct/exp4e/blob/master/constantk/Constant_K_filter_level3.ipynb](https://github.com/ohashi-gnct/exp4e/blob/master/constantk/Constant_K_filter_level3.ipynb)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ohashi-gnct/exp4e/blob/master/constantk/Constant_K_filter_level3.ipynb)
+
+レベル3 level 2:
+
+[github.com/ohashi-gnct/exp4e/blob/master/constantk/Constant_K_filter_level2.ipynb](https://github.com/ohashi-gnct/exp4e/blob/master/constantk/Constant_K_filter_level2.ipynb)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ohashi-gnct/exp4e/blob/master/constantk/Constant_K_filter_level2.ipynb)
 
 ## 検討課題 Discussion
 

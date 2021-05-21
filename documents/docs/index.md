@@ -6,9 +6,11 @@
 
 Pythonプログラムは、[github.com/ohashi-gnct/exp4e](https://github.com/ohashi-gnct/exp4e)を参照してください。
 
-プログラムを使う際は、それぞれのJupyter notebookに「Open in Colab」というアイコンがあるため、
+プログラムを使う際は、それぞれのリンクに「Open in Colab」というアイコンがあるため、
 
 それをクリックしてColabで開くことを推奨します。
+
+![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)
 
 リポジトリごとCloneしてもよいですが、その実験の直前まで
 
