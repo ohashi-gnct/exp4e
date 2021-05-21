@@ -1,17 +1,17 @@
-# Welcome to MkDocs
+# 4E電気情報工学実験
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+4E電気情報工学実験のうち、大橋が設計・説明するテーマについて
 
-## Commands
+実験書が置いてあります。
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Pythonプログラムは、[github.com/ohashi-gnct/exp4e](https://github.com/ohashi-gnct/exp4e)を参照してください。
 
-## Project layout
+プログラムを使う際は、それぞれのJupyter notebookに「Open in Colab」というアイコンがあるため、
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+それをクリックしてColabで開くことを推奨します。
+
+リポジトリごとCloneしてもよいですが、その実験の直前まで
+
+プログラムを変更する可能性があることに注意してください。
+
+間違いがあった場合、直接報告してください。Pull requestでもよいですが。

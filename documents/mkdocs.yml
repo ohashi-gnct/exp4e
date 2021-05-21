@@ -3,6 +3,8 @@ nav:
   - ホーム Home: index.md
   - 定K形フィルタ Constant-K filters: constantk.md
   - 通信工学 Communication Engineering: communicationeng.md
+  - マルチメディア信号処理 Signal prosessing for multimedia: multimedia.md
+  - データ解析入門 How to analyze big data: datascience.md 
 
 theme: readthedocs
 
