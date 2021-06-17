@@ -62,17 +62,21 @@ For a discretized cosine wave, perform a discrete Fourier transform and show the
 
 Amplitude modulation of the cosine wave above is the following equation.
 
-$$ V_{AM}(i\Delta t)=\left(1+m_a \cos{(2\pi ip/N)}\right)\cos{(2\pi i/N)} $$
+$$ V_{AM}(i\Delta t)=\left(1+m_a \cos{(2\pi i f_s /N)}\right)\cos{(2\pi f_c i/N)} $$
 
 振幅変調した波形について、フーリエ変換を行い結果を図示せよ。
 
 Perform a Fourier transform on the amplitude-modulated waveform and show the results.
 
-ただし、変調度 $ m_a=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) $とする。
+ただし、$ f_c=10, N=256, i=(1, 2, 3, \ldots , 256) $とする。
 
 The values for each parameters are as follows:
 
-Modulation index $ m_a=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) $
+$ f_c=10, N=256, i=(1, 2, 3, \ldots , 256) $
+
+その他のパラメータは適切に変更し、変化を確認する。
+
+Other parameters should be changed as appropriate and changes should be checked.
 
 ### 周波数変調 Frequency modulation
 
@@ -80,19 +84,21 @@ Modulation index $ m_a=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) $
 
 Frequency modulation of the cosine wave above is the following equation.
 
-$$ V_{FM}(i\Delta t)=\cos{(2\pi i/N+\beta \sin{(2\pi ip/N)})} $$
+$$ V_{FM}(i\Delta t)=\cos{(2\pi i f_c/N+\beta \sin{(2\pi i f_s/N)})} $$
 
 周波数変調した波形について、フーリエ変換を行い結果を図示せよ。
 
 Perform a Fourier transform on the frequency-modulated waveform and show the results.
 
-ただし、変調指数 $ \beta=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) $ とする。
+ただし、$ f_c=10, N=256, i=(1, 2, 3, \ldots , 256) $ とする。
 
 The values for each parameters are as follows:
 
-Modulation index $ \beta=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) $
+$ f_c=10, N=256, i=(1, 2, 3, \ldots , 256) $
 
+その他のパラメータは適切に変更し、変化を確認する。
 
+Other parameters should be changed as appropriate and changes should be checked.
 
 ## 検討課題 Discussion
 

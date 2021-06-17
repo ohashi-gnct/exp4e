@@ -16,7 +16,7 @@ Pythonプログラムは、[github.com/ohashi-gnct/exp4e](https://github.com/oha
 
 プログラムを変更する可能性があることに注意してください。
 
-間違いがあった場合、直接報告してください。Pull requestでもよいですが。
+間違いがあった場合、直接報告してください。
 
 ## 目次 Index
 
