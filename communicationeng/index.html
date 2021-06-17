@@ -163,26 +163,32 @@
 <p>上のcos波をAM変調すると、以下の式となる。</p>
 <p>Amplitude modulation of the cosine wave above is the following equation.</p>
 <p>
-<script type="math/tex; mode=display"> V_{AM}(i\Delta t)=\left(1+m_a \cos{(2\pi ip/N)}\right)\cos{(2\pi i/N)} </script>
+<script type="math/tex; mode=display"> V_{AM}(i\Delta t)=\left(1+m_a \cos{(2\pi i f_s /N)}\right)\cos{(2\pi f_c i/N)} </script>
 </p>
 <p>振幅変調した波形について、フーリエ変換を行い結果を図示せよ。</p>
 <p>Perform a Fourier transform on the amplitude-modulated waveform and show the results.</p>
-<p>ただし、変調度 <script type="math/tex"> m_a=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) </script>とする。</p>
+<p>ただし、<script type="math/tex"> f_c=10, N=256, i=(1, 2, 3, \ldots , 256) </script>とする。</p>
 <p>The values for each parameters are as follows:</p>
-<p>Modulation index <script type="math/tex"> m_a=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) </script>
+<p>
+<script type="math/tex"> f_c=10, N=256, i=(1, 2, 3, \ldots , 256) </script>
 </p>
+<p>その他のパラメータは適切に変更し、変化を確認する。</p>
+<p>Other parameters should be changed as appropriate and changes should be checked.</p>
 <h3 id="frequency-modulation">周波数変調 Frequency modulation</h3>
 <p>上のcos波を周波数変調すると、以下の式となる。</p>
 <p>Frequency modulation of the cosine wave above is the following equation.</p>
 <p>
-<script type="math/tex; mode=display"> V_{FM}(i\Delta t)=\cos{(2\pi i/N+\beta \sin{(2\pi ip/N)})} </script>
+<script type="math/tex; mode=display"> V_{FM}(i\Delta t)=\cos{(2\pi i f_c/N+\beta \sin{(2\pi i f_s/N)})} </script>
 </p>
 <p>周波数変調した波形について、フーリエ変換を行い結果を図示せよ。</p>
 <p>Perform a Fourier transform on the frequency-modulated waveform and show the results.</p>
-<p>ただし、変調指数 <script type="math/tex"> \beta=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) </script> とする。</p>
+<p>ただし、<script type="math/tex"> f_c=10, N=256, i=(1, 2, 3, \ldots , 256) </script> とする。</p>
 <p>The values for each parameters are as follows:</p>
-<p>Modulation index <script type="math/tex"> \beta=0.5, p=2, N=256, i=(1, 2, 3, \ldots , 256) </script>
+<p>
+<script type="math/tex"> f_c=10, N=256, i=(1, 2, 3, \ldots , 256) </script>
 </p>
+<p>その他のパラメータは適切に変更し、変化を確認する。</p>
+<p>Other parameters should be changed as appropriate and changes should be checked.</p>
 <h2 id="discussion">検討課題 Discussion</h2>
 <p>(1) アナログ変調とディジタル変調の違いを説明せよ。</p>
 <p>Explain the difference between analog modulation and digital modulation.</p>
