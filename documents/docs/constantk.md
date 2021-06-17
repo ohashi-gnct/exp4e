@@ -52,6 +52,8 @@ An example of the analysis is shown below.
 
 ![](images/lpf.png)
 
+（実は[githubにascファイルが置いてある](https://github.com/ohashi-gnct/exp4e/tree/master/constantk)のは秘密）
+
 #### ハイパスフィルタ High-pass filter
 
 LC直列回路に内部抵抗600Ω、1VのAC電源を接続し、HPFを設計せよ。
