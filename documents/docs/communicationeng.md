@@ -40,13 +40,13 @@ cos波 $ f(t)=\cos{(2\pi t/T)} (0<t\leqq T) $ を離散化し、フーリエ変�
 
 We discretize the cosine wave $ f(t)=\cos{(2\pi t/T)} (0<t\leqq T) $ and Fourier transform it.
 
-時間刻みを $ \delta t $ とし、$ N=T/\delta t $ とすることで、
+時間刻みを $ \Delta t $ とし、$ N=T/\Delta t $ とすることで、
 
 $ t=i\Delta t (1\leqq i \leqq N) $ と時間を離散化できる。
 
-By setting the time increments as $ \delta t $ and $ N=T/\delta t $ ,
+By setting the time increments as $ \Delta t $ and $ N=T/\Delta t $ ,
 
-we can discretize the time as $ t=i\delta t (1\leqq i \leqq N) $
+we can discretize the time as $ t=i\Delta t (1\leqq i \leqq N) $
 
 これによってcos波を離散化すると、$ f(i\Delta t)=\cos{(2\pi i/N)} $ となる。
 
